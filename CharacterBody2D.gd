@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 600
 const BULLET_SCENE = preload("res://scenes/bullet.tscn")
-#vrum
+
 var is_attacking = false
 @onready var bullet_position = $bullet_position
 @onready var shoot_cooldown = $"../shoot_cooldown"
