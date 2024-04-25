@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 600
 const BULLET_SCENE = preload("res://scenes/bullet.tscn")
-
+#vrum
 var is_attacking = false
 @onready var bullet_position = $bullet_position
 @onready var shoot_cooldown = $"../shoot_cooldown"
@@ -12,7 +12,6 @@ func _physics_process(delta):
 		velocity.x = direction_x * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		
 	global_position.x = clamp(global_position.x , 65 , 1087)
 	
 	var direction_y = Input.get_axis("move_up", "move_down")
