@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 600
 const BULLET_SCENE = preload("res://scenes/bullet.tscn")
+#variaveus
 
 var is_attacking = false
 @onready var bullet_position = $bullet_position
